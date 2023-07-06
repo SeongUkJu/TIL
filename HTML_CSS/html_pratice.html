@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HTML Pratice</title>
+    <meta charset="utf-8">
+    <meta name="description" content="html pratice">
+    <meta name="keyword" content="html,pratice,smebtc2023">
+    <meta name="author" content="Seonguk Ju">
+</head>
+
+<body>
+    <h2><a href='index.html'>Main</a></h2>
+
+    <ol>
+        <li><a href='html.html'>HTML</a></li>
+        <li><a href='css.html'>CSS</a></li>
+    </ol>
+    
+    <h3>HTML</h3>
+    this is HTML page<br><br>
+    <p>
+        HTMLHTMLHTMLHTMLHTML
+    </p>
+    HTML<br>HTMLHTML<br>HTMLHTMLHTML<br>
+    HTMLHTMLHTMLHTML<br><br>
+    HTMLHTMLHTMLHTMLHTML<br>
+
+    <img src="html_logo.png" width="100" height="100" alt="HTML Logo Image" title="HTML Logo Image">
+
+    <table border="2">
+        <tfoot>
+            <tr>
+                <td colspan="3">-</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>student code</th>
+                <th>grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ju</td>
+                <td>202112560</td>
+                <td rowspan="2">3</td>
+            </tr>
+            <tr>
+                <td>Seong</td>
+                <td>0317</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="'http://localhost/login.php">
+        <p>ID : <input type="text" name="id" value="Type your ID"></p>
+        <p>PW : <input type="password" name="'pw" value="Type your PW"></p>
+        <p>Address : <input type="text" name="address" value="Type your Address"></p>
+        Description<br>
+        <textarea cols="50" rows="10" name="Description">Type</textarea><br>
+        <p><input type="submit"></p>
+    </form>
+
+    <form action="http://localhost/color.php">
+        <h3>color1</h3>
+        <select name="color1">
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit">
+        <h3>color2, multi select</h3>
+        <select name="color2" multiple>
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <form action="http://localhost/radiocheckbox.php">
+        <h3>radio 1</h3>
+            <p>
+                radio 1-1:<input type="radio" name="radio1" value="radio1-1" checked>
+                radio 1-2:<input type="radio" name="radio1" value="radio1-2">
+                radio 1-3:<input type="radio" name="radio1" value="radio1-3">
+            </p>
+            <p>
+                radio 1-4:<input type="radio" name="radio1" value="radio1-4">
+                radio 1-5:<input type="radio" name="radio1" value="radio1-5">
+                radio 1-6:<input type="radio" name="radio1" value="radio1-6">
+            </p>
+        <h3>radio 2</h3>
+            <p>
+                radio 2-1:<input type="radio" name="radio2" value="radio2-1">
+                radio 2-2:<input type="radio" name="radio2" value="radio2-2">
+                radio 2-3:<input type="radio" name="radio2" value="radio2-3">
+            </p>
+        <h3>check multi</h3>
+            <p>
+                check1:<input type="checkbox" name="check1" value="check1-1" checked>
+                check2:<input type="checkbox" name="check1" value="check1-2" checked>
+                check3:<input type="checkbox" name="check1" value="check1-3" checked>
+            </p>
+        <input type="submit">
+    </form>
+
+    <form action="http://localhost/button.php">
+        <h3>button</h3>
+            <input type="text"><br>
+            <input type="submit" value="submit">
+            <input type="button" value="button" onclick="alert('hello world')">
+            <input type="reset">
+    </form>
+
+    <form action="http://localhost/hidden.php">
+        <p>
+            ID: <input type="text" name="id">
+            <input type="hidden" name="hidden" value="hidden">
+            PW: <input type="pw" name="pw">
+        </p>
+        <input type="submit">
+    </form>
+
+    <form action="'http://localhost/label.php">
+        <h3>label</h3>
+            <p>
+                <label for="id_label">ID</label>:
+                <input id="id_label" type="text" name="id" value="default id">
+            </p>
+            <p>
+                <label for="pw_label">PW</label>:
+                <input id="pw_label" type="text" name="pw" value="default pw"><br>
+            </p>
+            <p>
+                <label>
+                    Description<br>
+                    <textarea rows="2">type</textarea>
+                </label>
+            </p>
+            <p>
+                <input type="checkbox" name="color" value="red">red
+                <label for="green_label">green</label>
+                <input id="green_label" type="checkbox" name="color" value="green">
+                <label>
+                    <input type="checkbox" name="color" value="blue">blue
+                </label>
+            </p>
+    </form>
+
+    <form action="http://localhost/method.php" method="get">
+        <h3>method get</h3>
+            <label>
+                ID: <input type="text" name="id">
+            </label>
+            <label>
+                PW: <input type="text" name="pw">
+            </label>
+            <input type="submit">
+    </form>
+
+    <form action="http://localhost/method.php" method="post">
+        <h3>method post</h3>
+            <label>
+                ID: <input type="text" name="id">
+            </label>
+            <label>
+                PW: <input type="text" name="pw">
+            </label>
+            <input type="submit">
+    </form>
+
+    <form action="http://localhost/uploade.php" enctype="multipart/form-data" method="post">
+        <h3>upload</h3>
+            <input type="file">
+            <input type="submit">
+    </form>
+
+    <font size="10" color="skyblue">Hello</font>world
+
+</body>
+</html>
