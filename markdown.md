@@ -32,11 +32,11 @@ _Italic_
 
 <!--Link-->
 
-Naver [Link](www.naver.com)
+Naver [Link](https://www.naver.com)
 
 <!--Image-->
 
-![image description](https://commons.wikimedia.org/wiki/File:Markdown-mark.svg)
+![image description](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png?20190322184628 "markdown logo")
 
 <!--Table-->
 
