@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+master branch
+
+master branch mpratice
+=======
+pratice branch
+>>>>>>> 4ebc1c1 (2nd pra)
