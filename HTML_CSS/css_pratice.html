@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            h2{color:blue}
+            ul li{
+                color:pink;
+                text-decoration:underline;
+                background-color: powderblue;
+            }
+
+            ol, ul{
+                background-color: powderblue;
+            }
+
+            #lecture>li{
+                border: 1px solid red;
+                color: blue;
+            }
+            
+            #select{
+                font-size:50px;
+            }
+
+            .deactive{
+                text-decoration: line-through;
+            }
+
+            a:link{
+                color:black;
+            }
+            a:visited{
+                color: red;
+            }
+            a:hover{
+                color: yellow;
+            }
+            a:active{
+                color: green;
+            }
+            a:focus{
+                background-color: red;
+                color:white;
+            }
+            input:focus{
+                background-color: black;
+                color: white;
+            }
+
+            #px{font-size: 16px;}
+            #rem{font-size: 1rem;}
+
+            #typography{color:powderblue;}
+
+            #text_align{
+                text-align: center;
+                border: 1px solid gray;
+            }
+            #text_align2{
+                text-align: justify;
+                border: 1px solid gray;
+            }
+
+            #font_family1{
+                font-size: 5rem;
+                font-family: arial, verdana, "Helvetica Neue", monospace, serif;
+                font-weight: bold;
+                line-height: 100px;
+            }
+            #font_family2{
+                font: bold 5rem/2 arial, verdana, "Helvetica Neue", monospace, serif;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 style="color:red;">Hello World</h1>
+        <h2>Hello wrold</h2>
+
+        <h3 class="deactive">class</h3>
+            <ul>
+                <li class="deactive">HTML</li>
+                <li id="select">CSS</li>
+                <li class="deactive">JavaScript</li>
+            </ul>
+
+        <h3>parent child selector</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <ol id="lecture">
+                <li>HTML</li>
+                <li>CSS
+                    <ol>
+                        <li>selector</li>
+                        <li>declaration</li>
+                    </ol>
+                </li>
+                <li>JavaScript</li>
+            </ol>
+
+        <h3>pseudo class selector</h3>
+            <a href="https://www.naver.com">visited</a>
+            <a href="https://unvisited.com">unvisited</a>
+            <input type="text">
+
+        <h3>font size</h3>
+            <div id="px">px</div>
+            <div id="rem">rem</div>
+
+        <h3 id="typography">color</h3>
+            
+        <h3>text align</h3>
+            <p id="text_align">text</p>
+            <p id="text_align2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid cupiditate similique, nemo, dolorum commodi, molestiae illo saepe consequuntur natus laborum obcaecati consequatur eligendi voluptatem sed enim laboriosam incidunt reprehenderit.</p>
+        
+        <h3>font family</h3>
+            <p id="font_family1">
+                hello world<br>
+                font family1
+            </p>
+            <p id="font_family2">
+                hello world<br>
+                font family2
+            </p>
+
+        
+        </body>
+</html>
